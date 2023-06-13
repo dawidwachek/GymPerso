@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --clr-background: #4e4f80;
+    --clr-text:#ffffff;
+    --clr-secondary-text:#6d83ff;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@
 }
 
 body{
-    background: #8b8b8b;
+    background: var(--clr-background);
 }
 
 .header{
@@ -16,32 +23,45 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px, 10%;
-    background: #eaff8d;
+    padding: 10%, 10%;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
 
 }
 
 .logo {
     font-size: 30px;
-    color: #575757;
+    color: var(--clr-text);
     text-decoration: none;
     font-weight: 600;
+    margin-left: 5%;
 }
 
 .box {
     font-size: 10px;
-    color: #8b8b8b;
+    color: var(--clr-text);
     text-decoration: none;
     font-weight: 600;
 }
 
-.navbar a {
+.navbar{
+    margin-right: 5%;
+}
+.navbar a{
     font-size: 16px;
-    color: #575757;
+    color: var(--clr-text);
     text-decoration: none;
     font-weight: 500;
+    margin-left: 15px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    color: var(--clr-secondary-text);
+
 }
