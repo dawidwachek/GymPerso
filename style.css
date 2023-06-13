@@ -16,6 +16,8 @@
 
 body{
     background: var(--clr-background);
+    color: var(--clr-text)
+
 }
 
 .header{
@@ -64,4 +66,14 @@ body{
 .navbar a:active{
     color: var(--clr-secondary-text);
 
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 600px;
 }
